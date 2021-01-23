@@ -1,0 +1,186 @@
+* {
+  font-size: 1em;
+}
+
+.menuGlobal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menuGlobal .titreSite {
+  width: 300px;
+  margin-left: 20px;
+  font-size: 2em;
+}
+
+.menuGlobal .menuNavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menuGlobal .menuNavigation .villeSelectionnee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid grey;
+  background-color: grey;
+  width: 200px;
+  height: 40px;
+  padding: auto 20px auto;
+  font-size: medium;
+}
+
+.menuGlobal .menuNavigation .villeSelectionnee .fas {
+  margin-right: 20px;
+}
+
+.menuGlobal .menuNavigation .choixResto-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  text-align: center;
+  background-color: #afa6a6;
+  width: 100%;
+  height: 250px;
+  padding-top: 10px;
+  font-size: medium;
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
+  font-size: 1.2em;
+  width: 300px;
+  height: 40px;
+  margin: 10px auto 10px auto;
+  border: 1px solid pink;
+  border-radius: 30px;
+  background-color: pink;
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
+  margin: 0px;
+}
+
+.menuGlobal .menuNavigation .choixResto-prev > h2 {
+  margin: 0px;
+  font-size: 1.5em;
+}
+
+.menuGlobal .menuNavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menuGlobal .menuNavigation .villeSelectionnee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid grey;
+  background-color: grey;
+  width: 200px;
+  height: 40px;
+  padding: auto 20px auto;
+  font-size: medium;
+}
+
+.menuGlobal .menuNavigation .villeSelectionnee .fas {
+  margin-right: 20px;
+}
+
+.menuGlobal .menuNavigation .choixResto-prev {
+  text-align: center;
+  background-color: #afa6a6;
+  width: 100%;
+  height: 250px;
+  padding-top: 10px;
+  font-size: medium;
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
+  font-size: 1.2em;
+  width: 300px;
+  height: 40px;
+  margin: 10px auto 10px auto;
+  border: 1px solid pink;
+  border-radius: 30px;
+  background-color: pink;
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
+  margin: 0px;
+}
+
+.menuGlobal .menuNavigation .choixResto-prev > h2 {
+  margin: 0px;
+  font-size: 1.5em;
+}
+
+.fonctionment-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fonctionment-prev > h2 {
+  padding-left: 20px;
+}
+
+.fonctionment-prev__onglet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin: 10px auto 10px auto;
+}
+
+.fonctionment-prev__onglet .numberOnglet {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.fonctionment-prev__onglet .fas {
+  margin: auto 0px auto 40px;
+}
+
+.fonctionment-prev__onglet__text {
+  margin: 10px auto 10px 30px;
+}
+/*# sourceMappingURL=style.css.map */
