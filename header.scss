@@ -1,30 +1,50 @@
 *{
     font-size: 1em;
+    @media screen and (max-width: 800px)
+    {
+        font-size: 1.2em;
+    }
 }
-
 .menuGlobal{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border: 1px solid black;
+    width: 99%;
+
+    @media screen and (max-width: 800px)
+    {
+        flex-direction: column;
+    }
 
     .titreSite{
         width: 300px;
         margin-left: 20px;
-        font-size: 2em;
+        margin-top: 100px;
+        font-size: 3em;
+        @media screen and (max-width: 800px)
+        {
+            width: 100%;
+            text-align: center;
+            margin-left: 0px;
+            margin-top: 20px;
+        }
     }
     
     .menuNavigation{
         display: flex;
         flex-direction: row;        
-    
+        @media screen and (max-width: 800px)
+        {
+            flex-direction: column;
+        }
         .villeSelectionnee{
             display: flex;
             justify-content: center;
             align-items: center;
             border: 2px solid grey;
             background-color: grey;
-            width: 250px;
+            width: 200px;
             height: 40px;
             padding: auto 20px auto;
             margin-top: 0px;
@@ -32,90 +52,63 @@
             .fas{
                 margin-right: 20px;
             }
+            @media screen and (max-width: 800px)
+            {
+                width: 99.5%; 
+                height: 60px;  
+                font-size : 1em;
+            }
         }
     
         .choixResto-prev{
             display: flex;
             flex-direction: column;
+
             text-align: center;
             background-color: rgb(175, 166, 166);
-            width: 100%;
+            width: 450px;
             height: 250px;
             padding-top: 10px;
-            font-size: medium;
-    
+            font-size: 1.4em;
+
+            @media screen and (max-width: 800px)
+            {
+                width: 99.9%;
+                height: 330px;
+                font-size : 0.5em;
+            }
+
             &__buttonExplorer{
-                font-size: 1.2em;
+                font-size: 1em;
                 width: 300px;
                 height: 40px;
                 margin: 10px auto 10px auto;
                 border: 1px solid pink;
                 border-radius: 30px;
                 background-color: pink;
+
+                @media screen and (max-width: 800px)
+                {
+                    width: 600px;
+                    height: 50px;
+                    font-size: 1.8em;
+                }
     
                 .textButtonResto-prev{
                     margin: 0px;
+                    
                 }
             }
     
         // pour coller h2 à zone au dessus
             > h2{
                 margin: 0px;
-                font-size: 1.5em;
+
+                @media screen and (max-width: 800px)
+                {
+                        font-size: 1.5em;
+                }
             }
         }
     }
-}
-
-
-
-
-.fonctionment-prev{
-    display: flex;
-    flex-direction: column;
-
-    > h2{
-        padding-left: 20px;
-        margin-top: 30px;
-        }
-        
-        
-    &__onglet{
-        display: flex;
-        flex-direction: row;
-        border: 2px solid red;
-
-        height: 300px;
-
-        &__button{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-
-        width: 200px;
-        height: 200px;
-
-        border: 3px solid red;
-        border-radius: none;
-
-        margin: 10px auto 10px auto;
-
-            .numberOnglet{
-                border: 1px solid black;
-                border-radius: none;
-            }
-
-            .fas{
-                border: 1px solid black;
-            }
-
-            &__text{
-                border: 1px solid black;
-                font-size: x-large;
-                text-align: center;
-            }
-        }
-    }
-
 }
