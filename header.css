@@ -1,8 +1,24 @@
-* {
-  font-size: 1em;
+@font-face {
+  font-family: 'titre_Police';
+  src: url("Shrikhand-Regular.ttf");
 }
 
-@media screen and (max-width: 800px) {
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto_Bold';
+  src: url("Roboto-Bold.ttf");
+}
+
+* {
+  font-size: 1em;
+  font-family: 'Roboto', Verdana;
+}
+
+@media screen and (max-width: 780px) {
   * {
     font-size: 1.2em;
   }
@@ -19,11 +35,19 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid black;
   width: 99%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
+  .menuGlobal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
   .menuGlobal {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -34,17 +58,28 @@
 
 .menuGlobal .titreSite {
   width: 300px;
-  margin-left: 20px;
-  margin-top: 100px;
+  margin-left: 30px;
+  margin-top: 20px;
   font-size: 3em;
+  font-family: 'titre_Police', Arial;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
   .menuGlobal .titreSite {
-    width: 100%;
+    width: 99%;
     text-align: center;
     margin-left: 0px;
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .titreSite {
+    width: 99%;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 3em;
+    text-align: center;
   }
 }
 
@@ -58,12 +93,23 @@
           flex-direction: row;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
   .menuGlobal .menuNavigation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px auto 0px auto;
+    width: 600px;
   }
 }
 
@@ -77,24 +123,32 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid grey;
-  background-color: grey;
+  border: 2px solid #eaeaea;
+  background-color: #eaeaea;
   width: 200px;
   height: 40px;
   padding: auto 20px auto;
   margin-top: 0px;
-  font-size: medium;
+  font-size: 1.2em;
 }
 
 .menuGlobal .menuNavigation .villeSelectionnee .fas {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
   .menuGlobal .menuNavigation .villeSelectionnee {
-    width: 99.5%;
+    width: 99%;
     height: 60px;
-    font-size: 1em;
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation .villeSelectionnee {
+    width: 99%;
+    height: 60px;
+    font-size: 1.6em;
   }
 }
 
@@ -107,19 +161,51 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  background-color: #afa6a6;
+  background-color: #f6f6f6;
   width: 450px;
-  height: 250px;
-  padding-top: 10px;
+  height: 270px;
+  padding-top: 0px;
   font-size: 1.4em;
+  margin-bottom: 0px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
   .menuGlobal .menuNavigation .choixResto-prev {
-    width: 99.9%;
+    width: 99.7%;
     height: 330px;
     font-size: 0.5em;
   }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev {
+    width: 99.7%;
+    height: 330px;
+    font-size: 1.6em;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__title {
+  font-size: 1.2em;
+  font-family: 'Roboto_Bold';
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev__title {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev__title {
+    font-size: 1.2em;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__descriptif {
+  margin-top: 0px;
+  font-size: 0.9em;
 }
 
 .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
@@ -127,28 +213,54 @@
   width: 300px;
   height: 40px;
   margin: 10px auto 10px auto;
-  border: 1px solid pink;
+  border: 1px solid #FF79DA;
   border-radius: 30px;
-  background-color: pink;
+  color: white;
+  background-color: #FF79DA;
+  background: linear-gradient to bottom right, #FF79DA, 20%, #9356DC;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
   .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
-    width: 600px;
+    width: 280px;
     height: 50px;
-    font-size: 1.8em;
+    font-size: 0.9em;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
+    width: 450px;
+    height: 70px;
+    font-size: 1.2em;
+    color: white;
   }
 }
 
 .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
-  margin: 0px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
+    margin-top: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 .menuGlobal .menuNavigation .choixResto-prev > h2 {
   margin: 0px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
   .menuGlobal .menuNavigation .choixResto-prev > h2 {
     font-size: 1.5em;
   }
