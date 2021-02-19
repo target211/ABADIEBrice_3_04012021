@@ -1,8 +1,9 @@
 $couleur_Primaire: #9356DC;
 $couleur_Secondaire: #FF79DA;
+$couleur_Secondaire_hover: #fa92dd;
 $couleur_Secondaire_Degrade: rgb (165, 90, 220);
 $couleur_Tertiaire: #99E2D0;
-$fond_clair: rgb(246, 246, 246);
+$fond_clair: rgb(240, 240, 240);
 $fond_Sombre: rgb(234, 234, 234);
 
 $telephone: 780px;
@@ -25,7 +26,7 @@ $ordi: 1024px;
 
 *{
     font-size: 1em;
-    font-family: 'Roboto', Verdana;
+    font-family: Arial, Verdana;
     @media screen and (max-width: $telephone)
     {
         font-size: 1.2em;
@@ -100,6 +101,7 @@ i {
             font-size: 1.2em;
             .fas{
                 margin-right: 20px;
+                font-family: FontAwesome;
             }
             @media screen and (max-width: $telephone)
             {
@@ -184,6 +186,24 @@ i {
                     height: 70px;
                     font-size: 1.2em;
                     color: white;
+                }
+
+                :hover{
+                    border-radius: 30px;
+                    width: 300px;
+                    height: 40px;
+                    background-color: $couleur_Secondaire_hover;
+
+                    @media screen and (max-width: $telephone)
+                    {
+                        width: 280px;
+                        height: 50px;
+                    }
+                    @media screen and (min-width: $tablette_basse) and (max-width: $tablette_haute)
+                    {
+                        width: 450px;
+                        height: 70px;
+                    }
                 }
     
                 .textButtonResto-prev{

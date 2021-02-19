@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAgBA,AAAA,mBAAmB,CAAA;EACf,gBAAgB,EAZP,OAAkB;CAe9B",
+    "sources": [
+        "indexRestaurant.scss"
+    ],
+    "names": [],
+    "file": "indexRestaurant.css"
+}
