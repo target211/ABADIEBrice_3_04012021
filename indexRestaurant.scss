@@ -13,9 +13,104 @@ $tablette_haute: 1023px;
 $ordi: 1024px; 
 
 
+@font-face {
+    font-family: 'titre_Police';
+    src: url('Shrikhand-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto_Bold';
+    src: url('Roboto-Bold.ttf');
+}
+
 
 .annonceRestaurants{
     background-color: $fond_clair;
+    width: 1050px;
+    font-size: 'Roboto';
 
+    &__titre{
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 1.5em;
+    }
 
+    &__global{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &__bloc{
+            width: 420px;
+            height: 300px;
+            margin: 20px;
+            border: solid 1px grey;
+            border-radius: 30px;
+            overflow-x : hidden;
+            position: relative;
+
+            &__blocHaut{
+
+                &__image{
+                    height: 210px;
+                    width: 100%;
+                    object-fit: fill;
+                }
+
+                &__nouveau{
+                    background-color: $couleur_Tertiaire;
+                    width: 80px;
+                    height: 25px;
+                    font-size: 1.2em;
+                    padding-top: 2px;
+                    padding-left: 10px;
+
+                    color: #185e4b;
+
+                    position: absolute;
+                    top: 15px; right: 15px;
+                }
+            }
+
+            &__blocBas{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                position: relative;
+
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+
+                &__Texte{
+                        margin-left: 20px;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+
+                    &____titre{
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+
+                    &____sousTitre{
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                &__icone{
+                    font-size: 2em;
+
+                    color: rgb(168, 158, 158);
+
+                    position: absolute;
+                    top: 10px; right: 20px;
+                }
+            }
+        }
+    }
 }

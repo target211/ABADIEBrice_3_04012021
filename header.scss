@@ -13,29 +13,25 @@ $ordi: 1024px;
 
 @font-face {
     font-family: 'titre_Police';
-    src: url('Shrikhand-Regular.ttf');
+    src: url('./Shrikhand-Regular.ttf');
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.ttf');
+    src: url('./Roboto-Regular.ttf');
 }
 @font-face {
     font-family: 'Roboto_Bold';
-    src: url('Roboto-Bold.ttf');
+    src: url('./Roboto-Bold.ttf');
 }
 
 *{
     font-size: 1em;
-    font-family: Arial, Verdana;
     @media screen and (max-width: $telephone)
     {
         font-size: 1.2em;
     }
 }
 
-i {
-    font-family: FontAwesome;
-}
 
 .menuGlobal{
     display: flex;
@@ -64,6 +60,7 @@ i {
             text-align: center;
             margin-left: 0px;
             margin-top: 20px;
+            font-size: 1.2em;
         }
         @media screen and (min-width: $tablette_basse) and (max-width: $tablette_haute)
         {
@@ -77,7 +74,9 @@ i {
     
     .menuNavigation{
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;  
+        font-family: 'Roboto';
+              
         @media screen and (max-width: $telephone)
         {
             flex-direction: column;
@@ -99,18 +98,20 @@ i {
             padding: auto 20px auto;
             margin-top: 0px;
             font-size: 1.2em;
+            
             .fas{
                 margin-right: 20px;
-                font-family: FontAwesome;
             }
             @media screen and (max-width: $telephone)
             {
+                border-top: 2px solid $couleur_Tertiaire;
                 width: 99%; 
                 height: 60px;  
                 font-size : 0.5em;
             }
             @media screen and (min-width: $tablette_basse) and (max-width: $tablette_haute)
             {
+                border-top: 2px solid $couleur_Tertiaire;
                 width: 99%; 
                 height: 60px;  
                 font-size : 1.6em;
@@ -166,17 +167,18 @@ i {
                 font-size: 1em;
                 width: 300px;
                 height: 40px;
-                margin: 10px auto 10px auto;
+                margin: 0px auto 0px auto;
                 border: 1px solid $couleur_Secondaire;
                 border-radius: 30px;
                 color: white;
-                background-color: $couleur_Secondaire;
-                background: linear-gradient (to bottom right, $couleur_Secondaire, 20%, $couleur_Primaire); 
-
+                //background-color: $couleur_Secondaire;
+                background: linear-gradient(#df83cf, #9f58b4);
+                filter: brightness(0.9);
+                
                 @media screen and (max-width: $telephone)
                 {
-                    width: 280px;
-                    height: 50px;
+                    width: 300px;
+                    height: 60px;
                     font-size: 0.9em;
                     color: white;
                 }
@@ -192,32 +194,42 @@ i {
                     border-radius: 30px;
                     width: 300px;
                     height: 40px;
-                    background-color: $couleur_Secondaire_hover;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    background: linear-gradient(#df83cf, #9f58b4);
+                    filter: brightness(1.2);
 
                     @media screen and (max-width: $telephone)
                     {
-                        width: 280px;
-                        height: 50px;
+                        width: 300px;
+                        height: 60px;
+                        margin-top: 0px;
                     }
                     @media screen and (min-width: $tablette_basse) and (max-width: $tablette_haute)
                     {
                         width: 450px;
-                        height: 70px;
+                        height: 65px;
                     }
                 }
     
                 .textButtonResto-prev{
-                    margin-top: 5px;
+                    padding-top: 5px;
+                    margin-top: 0px;
+                    height: 35px;
                     
                     @media screen and (max-width: $telephone)
                     {
-                        margin-top: 12px;
+                        margin-top: 0px;
                         margin-bottom: 10px;
+                        padding-top: 15px;
+                        height: 45px;
                     }
                     @media screen and (min-width: $tablette_basse) and (max-width: $tablette_haute)
                     {
-                        margin-top: 15px;
+                        padding-top: 15px;
+                        margin-top: 0px;
                         margin-bottom: 10px;
+                        height: 55px;
                     }
                 }
             }
