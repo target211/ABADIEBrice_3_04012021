@@ -32,8 +32,22 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 20px;
+  margin-bottom: 0px;
   width: 99%;
+  height: 300px;
   font-family: 'Roboto';
+}
+
+@media screen and (max-width: 780px) {
+  .fonctionment-prev {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .fonctionment-prev {
+    height: 400px;
+  }
 }
 
 .fonctionment-prev > h2 {
