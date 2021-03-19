@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'titre_Police';
+  src: url("./Shrikhand-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("./Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto_Bold';
+  src: url("./Roboto-Bold.ttf");
+}
+
+* {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 780px) {
+  * {
+    font-size: 1.2em;
+  }
+}
+/*# sourceMappingURL=global.css.map */

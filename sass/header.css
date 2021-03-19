@@ -1,0 +1,309 @@
+@font-face {
+  font-family: 'titre_Police';
+  src: url("./Shrikhand-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("./Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto_Bold';
+  src: url("./Roboto-Bold.ttf");
+}
+
+* {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 780px) {
+  * {
+    font-size: 1.2em;
+  }
+}
+
+/* import grid CSS */
+/* bloc le plus grand du header */
+.menuGlobal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 99%;
+  /* bloc global sans titre */
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menuGlobal .titreSite {
+  width: 300px;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 3em;
+  font-family: 'titre_Police', Arial;
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal .titreSite {
+    width: 99%;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .titreSite {
+    width: 99%;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 3em;
+    text-align: center;
+  }
+}
+
+.menuGlobal .menuNavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Roboto';
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal .menuNavigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px auto 0px auto;
+    width: 600px;
+  }
+}
+
+.menuGlobal .menuNavigation .villeSelectionnee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #eaeaea;
+  background-color: #eaeaea;
+  width: 200px;
+  height: 40px;
+  padding: auto 20px auto;
+  margin-top: 0px;
+  font-size: 1.2em;
+}
+
+.menuGlobal .menuNavigation .villeSelectionnee .fas {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal .menuNavigation .villeSelectionnee {
+    border-top: 2px solid #99E2D0;
+    width: 99%;
+    height: 60px;
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation .villeSelectionnee {
+    border-top: 2px solid #99E2D0;
+    width: 99%;
+    height: 60px;
+    font-size: 1.6em;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #f0f0f0;
+  width: 450px;
+  height: 270px;
+  padding-top: 0px;
+  font-size: 1.4em;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev {
+    width: 99.7%;
+    height: 330px;
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev {
+    width: 99.7%;
+    height: 330px;
+    font-size: 1.6em;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__title {
+  font-size: 1.2em;
+  font-family: 'Roboto_Bold';
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev__title {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev__title {
+    font-size: 1.2em;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__descriptif {
+  margin-top: 0px;
+  font-size: 0.9em;
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
+  font-size: 1em;
+  width: 300px;
+  height: 40px;
+  margin: 0px auto 0px auto;
+  border: 1px solid #FF79DA;
+  border-radius: 30px;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#df83cf), to(#9f58b4));
+  background: linear-gradient(#df83cf, #9f58b4);
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
+    width: 300px;
+    height: 60px;
+    font-size: 0.9em;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
+    width: 450px;
+    height: 70px;
+    font-size: 1.2em;
+    color: white;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__buttonExplorer :hover {
+  border-radius: 30px;
+  width: 300px;
+  height: 40px;
+  margin-top: 0px;
+  padding-top: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#df83cf), to(#9f58b4));
+  background: linear-gradient(#df83cf, #9f58b4);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer :hover {
+    width: 300px;
+    height: 60px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer :hover {
+    width: 450px;
+    height: 65px;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
+  padding-top: 5px;
+  margin-top: 0px;
+  height: 35px;
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    height: 45px;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
+    padding-top: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: 55px;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev > h2 {
+  margin: 0px;
+}
+
+@media screen and (max-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev > h2 {
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=header.css.map */
