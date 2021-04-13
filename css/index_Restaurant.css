@@ -189,32 +189,16 @@
     margin-left: 50px;
     padding-top: 0px;
     font-size: 0.8em;
+    margin: 0px;
   }
 }
 
-.annonceRestaurants__global__bloc__blocBas__Texte____titre {
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.annonceRestaurants__global__bloc__blocBas__Texte__titre {
+  margin: 0px;
 }
 
-@media screen and (max-device-width: 780px) {
-  .annonceRestaurants__global__bloc__blocBas__Texte____titre {
-    margin-left: 20px;
-  }
-}
-
-.annonceRestaurants__global__bloc__blocBas__Texte____sousTitre {
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-device-width: 780px) {
-  .annonceRestaurants__global__bloc__blocBas__Texte____sousTitre {
-    margin-top: -50px;
-    margin-bottom: -50px;
-  }
+.annonceRestaurants__global__bloc__blocBas__Texte__sousTitre {
+  margin: 0;
 }
 
 .annonceRestaurants__global__bloc__blocBas__icone {

@@ -183,28 +183,33 @@ $ordi: 1024px;
                             margin-left: 50px;
                             padding-top: 0px;
                             font-size: 0.8em;
+                            margin: 0px;
                         }
 
                     // 1ere ligne du bloc
-                    &____titre{
-                        margin-left: 20px;
-                        margin-top: 10px;
-                        margin-bottom: 10px;
+                    &__titre{
+                       //margin-left: 20px;
+                        //margin-top: 10px;
+                        //margin-bottom: 10px;
+                        margin: 0px;
                         @media screen and (max-device-width: $telephone)
                         {
-                            margin-left: 20px;
+                            //margin-left: 20px;
+                            //margin: 0px;
                         }
                     }
 
                     // 2eme ligne du bloc
-                    &____sousTitre{
-                        margin-left: 20px;
-                        margin-top: 10px;
-                        margin-bottom: 10px;
+                    &__sousTitre{
+                        //margin-left: 20px;
+                        //margin-top: 10px;
+                        //margin-bottom: 10px;
+                        margin: 0;
                         @media screen and (max-device-width: $telephone)
                         {
-                            margin-top: -50px;
-                            margin-bottom: -50px;
+                            // margin-top: -50px;
+                            // margin-bottom: -50px;
+                            // margin: 0px;
                         }
                     }
                 }
