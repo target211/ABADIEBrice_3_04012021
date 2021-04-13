@@ -1,0 +1,326 @@
+@import url("global.css");
+/* import grid CSS */
+@font-face {
+  font-family: 'titre_Police';
+  src: url("./Shrikhand-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("./Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto_Bold';
+  src: url("./Roboto-Bold.ttf");
+}
+
+/* bloc le plus grand du header */
+.menuGlobal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* Bloc du titre du site */
+  /*------------------ bloc global sans titre */
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
+  .menuGlobal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menuGlobal .titreSite {
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 3em;
+  font-family: 'titre_Police', Arial;
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .titreSite {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.3em;
+  }
+}
+
+@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
+  .menuGlobal .titreSite {
+    margin-left: 0px;
+    margin-top: 50px;
+    font-size: 5em;
+    text-align: center;
+  }
+}
+
+.menuGlobal .menuNavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Roboto';
+  padding-bottom: 10px;
+  /* bloc Paris Belleville */
+  /* Texte descriptif sur les restaurants */
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .menuNavigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
+  .menuGlobal .menuNavigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px;
+    font-size: 1.3em;
+  }
+}
+
+.menuGlobal .menuNavigation .villeSelectionnee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #eaeaea;
+  background-color: #eaeaea;
+  height: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1.2em;
+  color: #615b5b;
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .menuNavigation .villeSelectionnee {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 0px;
+    padding-right: 0px;
+    -webkit-box-shadow: inset 0px -1px 5px grey;
+            box-shadow: inset 0px -1px 5px grey;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
+  .menuGlobal .menuNavigation .villeSelectionnee {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    -webkit-box-shadow: inset 0px -1px 5px grey;
+            box-shadow: inset 0px -1px 5px grey;
+  }
+}
+
+.menuGlobal .menuNavigation .villeSelectionnee .fas {
+  margin-right: 10px;
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .menuNavigation .villeSelectionnee {
+    border-top: 2px solid #99E2D0;
+    height: 60px;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
+  .menuGlobal .menuNavigation .villeSelectionnee {
+    border-top: 2px solid #99E2D0;
+    height: 60px;
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .menuNavigation .villeSelectionnee .nomVilleSelectionnee {
+    margin-left: 40px;
+    font-size: 0.9em;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding-top: 0px;
+  font-size: 1.4em;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* bouton restaurants */
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev {
+    padding-top: 50px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev {
+    font-size: 1.6em;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__title {
+  font-size: 1.2em;
+  font-family: 'Roboto_Bold';
+  margin-bottom: 0px;
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev__title {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev__title {
+    font-size: 1.2em;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__descriptif {
+  font-size: 0.9em;
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev__descriptif {
+    font-size: 1em;
+    margin-top: -20px;
+    color: #777373;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
+  font-size: 1em;
+  margin: 0px auto 0px auto;
+  padding: 10px 15px;
+  border: 1px solid #FF79DA;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 15px 20px pink;
+          box-shadow: 0px 15px 20px pink;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff91ed), to(#c569e0));
+  background: linear-gradient(#ff91ed, #c569e0);
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+  margin-bottom: 30px;
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
+    font-size: 0.9em;
+    margin-top: 30px;
+    margin-bottom: 170px;
+    padding: 25px 35px;
+  }
+}
+
+@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
+    font-size: 1.2em;
+    margin-bottom: 80px;
+    padding: 15px 25px;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__buttonExplorer :hover {
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#df83cf), to(#9f58b4));
+  background: linear-gradient(#df83cf, #9f58b4);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer :hover {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer :hover {
+    margin-top: 0px;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
+  padding-top: 5px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
+    padding-top: 15px;
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
+  .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
+    margin-top: 0px;
+  }
+}
+
+.menuGlobal .menuNavigation .choixResto-prev > h2 {
+  margin: 0px;
+}
+
+@media screen and (max-device-width: 780px) {
+  .menuGlobal .menuNavigation .choixResto-prev > h2 {
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=header.css.map */

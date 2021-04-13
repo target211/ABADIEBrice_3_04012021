@@ -1,0 +1,223 @@
+@import url("global.css"); /* import grid CSS */
+
+$couleur_Primaire: #9356DC;
+$couleur_Secondaire: #FF79DA;
+$couleur_Secondaire_hover: #fa92dd;
+$couleur_Secondaire_Degrade: rgb (165, 90, 220);
+$couleur_Tertiaire: #99E2D0;
+$fond_clair: rgb(240, 240, 240);
+$fond_Sombre: rgb(234, 234, 234);
+$fond_Footer: rgb(53, 53, 53);
+$color_Police_Grey:rgb(97, 91, 91);
+
+$telephone: 780px;
+$tablette_basse: 781px;
+$tablette_haute: 1023px;
+$ordi: 1024px; 
+
+@font-face {
+    font-family: 'titre_Police';
+    src: url('./Shrikhand-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto_Bold';
+    src: url('./Roboto-Bold.ttf');
+}
+
+/* bloc fonctionnement */
+.fonctionment-prev{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 300px;
+    font-family: 'Roboto';
+    
+    @media screen and (max-device-width: $telephone)
+    {
+        height: 1200px;
+    }
+    @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
+    {
+        height: 400px;
+    }
+/* Titre Fonctionnement */
+    > h2{
+        padding-left: 20px;
+        margin-top: 50px;
+        font-size: 1.8em;
+
+            @media screen and (max-device-width: $telephone)
+            {
+                margin-top: 130px;
+                font-size: 2.4em;
+            }
+        }
+
+      /* bloc avec les 3 onglets */      
+    &__onglet{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+
+        @media screen and (max-device-width: $telephone)
+        {
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        :hover{
+            filter: brightness(1.03);
+            
+            .fas{
+                color: $couleur_Primaire;
+            }
+        }
+/* caracteristique de chaque onglet */
+        &__button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        height: 70px;
+        width: 380px;
+
+        border: 3px solid $fond_clair;
+        background-color: $fond_clair;
+
+        border-radius: 30px;
+        box-shadow: 10px 15px 15px $fond_Sombre;
+        
+        margin: 30px auto 10px auto;
+
+        position : relative;
+
+        @media screen and (max-device-width: $telephone)
+        {
+            justify-content: flex-start;
+            height: 180px;
+            width: 800px;
+            border-radius: 50px;
+            margin: 30px auto 50px auto;
+            font-size: 2.5em;
+        }
+        @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
+        {
+            flex-wrap: wrap;
+            justify-content: center;
+            border-radius: 20px;
+            height: 170px;
+            width: 200px;
+        }
+            /* numéro de l'onglet */
+            .numberOnglet{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                border: 1px solid $couleur_Primaire;
+                background-color: $couleur_Primaire;
+                border-radius: 100%;
+                color: white;
+
+                width: 36px;
+                height: 35px;
+                font-size: 1.2em;
+
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(-55%, -50%);
+
+                :hover{
+                    display: none;
+                }
+                
+                @media screen and (max-device-width: $telephone)
+                {
+                    margin-top: 20px;
+                    margin-left: 0px;
+                    width: 61px;
+                    height: 60px;
+                    font-size: 0.4em;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(-55%, -70%);
+                }
+                @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
+                {
+                    margin-bottom: 40px;
+                    margin-left: -60px;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 1.4em;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(170%, -170%);
+                }
+            }
+
+            .fas{
+                margin: 21px 10px 20px 0px;
+                padding-right: 15px;
+                padding-left: 15px;
+                font-size: 1.5em;
+                color: $color_Police_Grey;
+
+                @media screen and (max-device-width: $telephone)
+                {
+                    padding-left: 90px;
+                    padding-top: 10px;
+                    border: none;
+                    font-size: 0.5em;
+                }
+                @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
+                {
+                    justify-content: center;
+                    margin-left: 20px;
+
+                    font-size: 2em;
+                }
+            }
+
+            //couleur de l'icone de magasin en violet
+            .fas.fa-store{
+                color: $couleur_Primaire;
+            }
+            
+            /* texte onglet */
+            &__text{
+                font-size: 1.5em;
+                text-align: center;
+                margin: auto 10px auto 0px;
+                font-family: 'Roboto_Bold', Verdana;
+
+                @media screen and (max-device-width: $telephone)
+                {
+                    margin: 25px 0px 10px 30px;
+                    border: none;
+                    font-size: 0.55em;
+                    margin-top: 30px;
+                }
+                @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
+                {
+                    margin: 0px auto 0px auto;
+                    padding-bottom: 20px;
+                }
+
+            }
+        }
+    }
+
+}

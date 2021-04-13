@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <!--<link rel="stylesheet" href="main.css" />-->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/fonctionnement_Site.css" />
+    <link rel="stylesheet" href="css/index_Restaurant.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    
-    <!-- permet de mettre le site au dimension de l'appareil -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <title>Site OhMyFood</title>
 </head>
@@ -20,19 +20,23 @@
 <!-- zone header -->
 <header>
     <section class="menuGlobal">
-        <h2 class="titreSite"><em>ohmyfood</em></h2>
+        <h2 class="titreSite">ohmyfood</h2>
         
+        <!-- bloc global -->
         <div class="menuNavigation">
+            <!-- bloc Paris Belleville -->
             <div class="villeSelectionnee">
                 <i class="fas fa-map-marker-alt"></i>
-                <p class="nomVilleSelectionnee">Paris, Belleville</p>
+                <p class="nomVilleSelectionnee"><b>Paris, Belleville</b></p>
             </div>
 
+            <!-- bloc restaurant explicatif sur le choix des restaurants -->
             <div class="choixResto-prev">
                 <p class="choixResto-prev__title">Réservez le menu qui </br>vous convient</p>
                 <div class="choixResto-prev__descriptif">
                     <p>Découvrez des restaurants d'exception,</br> séléctionnés par nos soins</p>
                 </div>
+                <!-- bouton restaurants -->
                 <div class="choixResto-prev__buttonExplorer">
                     <p class="textButtonResto-prev">Explorer nos restaurants</p>
                 </div>
@@ -45,7 +49,9 @@
 <!-- zone fonctionnement site -->
     <section class="fonctionment-prev">
         <h2>Fonctionnement</h2>
+    <!-- bloc de tous les onglets -------------------------------------->
         <div class="fonctionment-prev__onglet">
+            <!-- bloc de chaque onglet ------------------------>
             <div class="fonctionment-prev__onglet__button">
                 <div class="numberOnglet">
                     <div class="numberOnglet__Character">1</div>
@@ -53,6 +59,7 @@
                 <i class="fas fa-mobile-alt"></i>
                 <p class="fonctionment-prev__onglet__button__text">Choississez un restaurant</p>
             </div>
+            <!-- bloc de chaque onglet ------------------------>
             <div class="fonctionment-prev__onglet__button">
                 <div class="numberOnglet">
                     <div class="numberOnglet__Character">2</div>
@@ -60,6 +67,7 @@
                 <i class="fas fa-list"></i>
                 <p class="fonctionment-prev__onglet__button__text">Composez votre menu</p>
             </div>
+            <!-- bloc de chaque onglet ------------------------>
             <div class="fonctionment-prev__onglet__button">
                 <div class="numberOnglet">
                     <div class="numberOnglet__Character">3</div>
@@ -74,9 +82,11 @@
 <!-- zone Annonces Restaurant site -->  
     <section class="annonceRestaurants">
         <h2 class="annonceRestaurants__titre">Restaurants</h2>
-
+        <!-- bloc avec tout les blocs annonces restaurants-->
         <div class="annonceRestaurants__global">
+            <!-- bloc annonce restaurant -->
             <article class="annonceRestaurants__global__bloc">
+                <!-- bloc haut avec image -->
                 <div class="annonceRestaurants__global__bloc__blocHaut">
                     <img class="annonceRestaurants__global__bloc__blocHaut__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                     alt="Image d'annonce" />
@@ -84,7 +94,7 @@
                         Nouveau
                     </div>
                 </div>
-
+                <!-- bloc bac avec texte et icone -->
                 <div class="annonceRestaurants__global__bloc__blocBas">
                     <div class="annonceRestaurants__global__bloc__blocBas__Texte">
                         <h3 class="annonceRestaurants__global__bloc__blocBas__Texte__titre">La palette du goût</h3>
@@ -97,7 +107,9 @@
                 </div>  
             </article>
 
+            <!-- bloc annonce restaurant -->
             <article class="annonceRestaurants__global__bloc">
+                <!-- bloc haut avec image -->
                 <div class="annonceRestaurants__global__bloc__blocHaut">
                     <img class="annonceRestaurants__global__bloc__blocHaut__image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                     alt="Image d'annonce" />
@@ -105,7 +117,7 @@
                         Nouveau
                     </div>
                 </div>
-                
+                <!-- bloc bac avec texte et icone -->
                 <div class="annonceRestaurants__global__bloc__blocBas">
                     <div class="annonceRestaurants__global__bloc__blocBas__Texte">
                         <h3 class="annonceRestaurants__global__bloc__blocBas__Texte__titre">La note enchantée</h3>
@@ -118,12 +130,14 @@
                 </div>  
             </article>
 
+            <!-- bloc annonce restaurant -->
             <article class="annonceRestaurants__global__bloc">
+                <!-- bloc haut avec image -->
                 <div class="annonceRestaurants__global__bloc__blocHaut">
                     <img class="annonceRestaurants__global__bloc__blocHaut__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                     alt="Image d'annonce" />
                 </div>
-                
+                <!-- bloc bac avec texte et icone -->
                 <div class="annonceRestaurants__global__bloc__blocBas">
                     <div class="annonceRestaurants__global__bloc__blocBas__Texte">
                         <h3 class="annonceRestaurants__global__bloc__blocBas__Texte__titre">À la française</h3>
@@ -136,12 +150,14 @@
                 </div>  
             </article>
 
+            <!-- bloc annonce restaurant -->
             <article class="annonceRestaurants__global__bloc">
+                <!-- bloc haut avec image -->
                 <div class="annonceRestaurants__global__bloc__blocHaut">
                     <img class="annonceRestaurants__global__bloc__blocHaut__image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                     alt="Image d'annonce" />
                 </div>
-                
+                <!-- bloc bac avec texte et icone -->
                 <div class="annonceRestaurants__global__bloc__blocBas">
                     <div class="annonceRestaurants__global__bloc__blocBas__Texte">
                         <h3 class="annonceRestaurants__global__bloc__blocBas__Texte__titre">Le délice des sens</h3>
@@ -158,19 +174,26 @@
 
 
 
-
+<!-- bloc footer -->
     <footer>
-        <div class="footer__Title">ohmyfood</div>
-        <div>
-            <i class="fas fa-utensils"></i>
-             Proposer un restaurant
-        </div>
-        <div>
-            <i class="fas fa-hands-helping"></i>
-            Devenir partenaire
-        </div>
-        <div>Mention légales</div>
-        <div>Contact (avec lien mail)</div>
+        <article class="blocFooter">
+            <!-- bloc footer sans le titre -->
+            <div class="blocFooter__Title">ohmyfood</div>
+            <div class="blocFooter__Text">
+                <i class="fas fa-utensils"></i>
+                 Proposer un restaurant
+            </div>
+            <div class="blocFooter__Text">
+                <i class="fas fa-hands-helping"></i>
+                Devenir partenaire
+            </div>
+            <div class="blocFooter__TextSansIcone">
+                Mention légales
+            </div>
+            <div class="blocFooter__TextSansIcone">
+                Contact (avec lien mail)
+            </div>
+        </article>
     </footer>
 
 </body>

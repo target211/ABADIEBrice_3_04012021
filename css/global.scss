@@ -1,0 +1,35 @@
+$couleur_Primaire: #9356DC;
+$couleur_Secondaire: #FF79DA;
+$couleur_Secondaire_hover: #fa92dd;
+$couleur_Secondaire_Degrade: rgb (165, 90, 220);
+$couleur_Tertiaire: #99E2D0;
+$fond_clair: rgb(240, 240, 240);
+$fond_Sombre: rgb(234, 234, 234);
+$fond_Footer: rgb(53, 53, 53);
+$color_Police_Grey:rgb(97, 91, 91);
+
+$telephone: 780px;
+$tablette_basse: 781px;
+$tablette_haute: 1023px;
+$ordi: 1024px; 
+
+@font-face {
+    font-family: 'titre_Police';
+    src: url('./Shrikhand-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto_Bold';
+    src: url('./Roboto-Bold.ttf');
+}
+
+*{
+    font-size: 1em;
+    @media screen and (max-device-width: $telephone)
+    {
+        font-size: 1.2em;
+    }
+}
