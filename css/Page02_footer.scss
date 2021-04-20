@@ -41,10 +41,11 @@ $ordi: 1024px;
     justify-content: center;
     color : white;
 
-    height: 170px;
-    font-size: 1em;
+    height: 250px;
+    font-size: 1.4em;
 
     position: relative;
+    top: 1500px;
     @media screen and (max-device-width: $telephone)
     {
         margin-top: 10px;
@@ -53,10 +54,14 @@ $ordi: 1024px;
         padding-bottom: 20px;
         height: 520px;
         font-size: 1.4em;
+        position: relative;
+        top: 3000px;
     }
     @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
     {
         margin-bottom: 0px;
+        position: relative;
+        top: 3000px;
     }
 
     // le titre du restaurant

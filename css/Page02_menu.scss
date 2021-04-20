@@ -28,58 +28,76 @@ $ordi: 1024px;
     src: url('./Roboto-Bold.ttf');
 }
 
+// bloc global du menu
 .menuGlobal{
     border: 1px solid $fond_clair;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     background-color: $fond_clair;
+    margin-top: -100px;
 
+    font-family: 'Roboto';
+
+    width: 100%;
+    position: absolute;
+    @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
+    {
+        font-size: 1.4em;
+    }
+    @media screen and (min-device-width: $ordi)
+    {
+        font-size: 4em;
+    }
+    // titre à la française
     &__titre{
         margin-top: 70px;
         margin-left: 30px;
         font-size: 2.5em;
+        width: 90%;
         font-family: 'titre_police';
+
+        display: flex;
+        justify-content: space-between;
         @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
         {
             font-size: 3em;
         }
         @media screen and (min-device-width: $ordi)
         {
-            font-size: 3.5em;
+            font-size: 1.5em;
         }
-
+        // icone coeur
         .far{
-            margin-left: 300px;
             font-size: 1em;
             width: 50px;
             color: $color_Police_Grey;
             @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
             {
-                margin-left: 450px;
+
             }
             @media screen and (min-device-width: $ordi)
             {
-                font-size: 1.5em;
-                margin-left: 950px;
+                font-size: 1em;
             }
         }
     }
 
+    // bloc contenant tout le menu : entrée / plat / dessert
     &__tiersDeMenu{
-        font-family: 'Roboto';
         margin-left: 30px;
-
+        // bloc de chaque tiers : entrée / plat / dessert
         &__blocMenu{
             margin-top: 100px;
             @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
             {
                 margin-top: 150px;
             }
-
+            // titre de chaque tier de menu
             &__titreBlocMenu{
                 color: $color_Police_Grey;
-                border-bottom: 5px solid $couleur_Tertiaire;
+                border-bottom: 7px solid $couleur_Tertiaire;
                 margin-bottom: 50px;
+                padding-bottom: 15px;
                 width: 120px;
                 @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
                 {
@@ -88,12 +106,13 @@ $ordi: 1024px;
                 }
                 @media screen and (min-device-width: $ordi)
                 {
-                    font-size: 2em;
+                    font-size: 0.5em;
                     margin-bottom: 0px;
                     margin-left: 45%;
                     width: 100px;
                 }
             }
+            // bloc du tier de menu sans le titre
             &__blocMenuSansTitre{
 
                 @media screen and (min-device-width: $ordi)
@@ -101,21 +120,22 @@ $ordi: 1024px;
                     display: flex;
                     flex-direction: row;
                 }
-
+                // bloc de chaque plat 
                 &__blocPlat{
                     display: flex;
                     flex-direction: row;
                     border-radius: 40px;
                     background-color: white;
 
-                    margin-top: 40px;
-                    margin-bottom: 40px;
+                    margin: 40px 0;
                     height: 180px;
                     width: 890px;
                     box-shadow: 0px 15px 20px $couleur_Tertiaire;
+
+                    cursor: pointer;
                     @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
                     {
-                        height: 130px;
+                        height: 170px;
                     }
                     @media screen and (min-device-width: $ordi)
                     {
@@ -123,9 +143,15 @@ $ordi: 1024px;
                         height: 130px;
                         margin-right: 50px;
                     }
+                    // bloc contenant la totalité du texte incluant le prix
                     &__texteGlobal{
                         width: 84%;
                         padding-left: 20px;
+                        @media screen and (min-device-width: $ordi)
+                        {
+                            width: 90%;
+                        }
+                        // nom du plat en gras
                         &__texteHaut{
                             font-size: 0.7em;
                             font-weight: bold;
@@ -136,9 +162,10 @@ $ordi: 1024px;
                             }
                             @media screen and (min-device-width: $ordi)
                             {
-                                font-size: 1.5em;
+                                font-size: 0.4em;
                             }
                         }
+                        // nom du plat sans gras
                         &__texteBas{
                             font-size: 0.6em;
                             color: $color_Police_Grey;
@@ -149,10 +176,11 @@ $ordi: 1024px;
                             }
                             @media screen and (min-device-width: $ordi)
                             {
-                                font-size: 1em;
+                                font-size: 0.3em;
                             }
                         }
                     }
+                    // prix du plat
                     &__prixPlat{
                         font-size: 0.8em;
                         font-weight: bold;
@@ -166,7 +194,7 @@ $ordi: 1024px;
                         }
                         @media screen and (min-device-width: $ordi)
                         {
-                            font-size: 1.5em;
+                            font-size: 0.4em;
                             padding-right: 20px;
                             position: relative;
                             top: 60px;
@@ -180,6 +208,7 @@ $ordi: 1024px;
             }
         }
     }
+    // bouton commander sous le menu
     &__buttonCommande{
         margin: 120px auto;
         margin-bottom: 200px;
@@ -193,11 +222,11 @@ $ordi: 1024px;
         border-radius: 100px;
         @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
         {
-            font-size: 2.8em;
+            font-size: 2em;
         }
         @media screen and (min-device-width: $ordi)
         {
-            font-size: 2em;
+            font-size: 0.5em;
             padding: 38px 110px;
             width: 175px;
         }

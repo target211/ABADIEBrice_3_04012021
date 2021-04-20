@@ -20,13 +20,36 @@
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   background-color: #f0f0f0;
+  margin-top: -100px;
+  font-family: 'Roboto';
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
+  .menuGlobal {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-device-width: 1024px) {
+  .menuGlobal {
+    font-size: 4em;
+  }
 }
 
 .menuGlobal__titre {
   margin-top: 70px;
   margin-left: 30px;
   font-size: 2.5em;
+  width: 90%;
   font-family: 'titre_police';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
@@ -37,32 +60,23 @@
 
 @media screen and (min-device-width: 1024px) {
   .menuGlobal__titre {
-    font-size: 3.5em;
+    font-size: 1.5em;
   }
 }
 
 .menuGlobal__titre .far {
-  margin-left: 300px;
   font-size: 1em;
   width: 50px;
   color: #615b5b;
 }
 
-@media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
-  .menuGlobal__titre .far {
-    margin-left: 450px;
-  }
-}
-
 @media screen and (min-device-width: 1024px) {
   .menuGlobal__titre .far {
-    font-size: 1.5em;
-    margin-left: 950px;
+    font-size: 1em;
   }
 }
 
 .menuGlobal__tiersDeMenu {
-  font-family: 'Roboto';
   margin-left: 30px;
 }
 
@@ -78,8 +92,9 @@
 
 .menuGlobal__tiersDeMenu__blocMenu__titreBlocMenu {
   color: #615b5b;
-  border-bottom: 5px solid #99E2D0;
+  border-bottom: 7px solid #99E2D0;
   margin-bottom: 50px;
+  padding-bottom: 15px;
   width: 120px;
 }
 
@@ -92,7 +107,7 @@
 
 @media screen and (min-device-width: 1024px) {
   .menuGlobal__tiersDeMenu__blocMenu__titreBlocMenu {
-    font-size: 2em;
+    font-size: 0.5em;
     margin-bottom: 0px;
     margin-left: 45%;
     width: 100px;
@@ -121,17 +136,17 @@
           flex-direction: row;
   border-radius: 40px;
   background-color: white;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0;
   height: 180px;
   width: 890px;
   -webkit-box-shadow: 0px 15px 20px #99E2D0;
           box-shadow: 0px 15px 20px #99E2D0;
+  cursor: pointer;
 }
 
 @media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
   .menuGlobal__tiersDeMenu__blocMenu__blocMenuSansTitre__blocPlat {
-    height: 130px;
+    height: 170px;
   }
 }
 
@@ -148,6 +163,12 @@
   padding-left: 20px;
 }
 
+@media screen and (min-device-width: 1024px) {
+  .menuGlobal__tiersDeMenu__blocMenu__blocMenuSansTitre__blocPlat__texteGlobal {
+    width: 90%;
+  }
+}
+
 .menuGlobal__tiersDeMenu__blocMenu__blocMenuSansTitre__blocPlat__texteGlobal__texteHaut {
   font-size: 0.7em;
   font-weight: bold;
@@ -162,7 +183,7 @@
 
 @media screen and (min-device-width: 1024px) {
   .menuGlobal__tiersDeMenu__blocMenu__blocMenuSansTitre__blocPlat__texteGlobal__texteHaut {
-    font-size: 1.5em;
+    font-size: 0.4em;
   }
 }
 
@@ -180,7 +201,7 @@
 
 @media screen and (min-device-width: 1024px) {
   .menuGlobal__tiersDeMenu__blocMenu__blocMenuSansTitre__blocPlat__texteGlobal__texteBas {
-    font-size: 1em;
+    font-size: 0.3em;
   }
 }
 
@@ -201,7 +222,7 @@
 
 @media screen and (min-device-width: 1024px) {
   .menuGlobal__tiersDeMenu__blocMenu__blocMenuSansTitre__blocPlat__prixPlat {
-    font-size: 1.5em;
+    font-size: 0.4em;
     padding-right: 20px;
     position: relative;
     top: 60px;
@@ -227,13 +248,13 @@
 
 @media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
   .menuGlobal__buttonCommande {
-    font-size: 2.8em;
+    font-size: 2em;
   }
 }
 
 @media screen and (min-device-width: 1024px) {
   .menuGlobal__buttonCommande {
-    font-size: 2em;
+    font-size: 0.5em;
     padding: 38px 110px;
     width: 175px;
   }

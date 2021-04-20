@@ -88,7 +88,7 @@ $ordi: 1024px;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid $fond_Sombre;
+            box-shadow: inset 0em 0.1em 0.3em rgb(197, 196, 196);
             background-color: $fond_Sombre;
             height: 45px;
             padding-left: 15px;
@@ -103,7 +103,6 @@ $ordi: 1024px;
                 padding-bottom: 32px;
                 padding-left: 0px;
                 padding-right: 0px;
-                box-shadow:inset 0px -1px 5px grey;
                 font-size: 1.2em;
             }
             @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
@@ -112,7 +111,6 @@ $ordi: 1024px;
                 padding-bottom: 10px;
                 padding-left: 0px;
                 padding-right: 0px;
-                box-shadow:inset 0px -1px 5px grey ;
             }
 
             .fas{
@@ -214,7 +212,11 @@ $ordi: 1024px;
                 }
 
                 :hover{
-                    border-radius: 30px;
+                    border-radius: 100px;
+                    margin: 0 0;
+                    height: 50px;
+                    width: 275px;
+                    padding: 0 0;
                     background: linear-gradient(#df83cf, #9f58b4);
                     filter: brightness(1.2);
 

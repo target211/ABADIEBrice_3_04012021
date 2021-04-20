@@ -119,7 +119,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #eaeaea;
+  -webkit-box-shadow: inset 0em 0.1em 0.3em #c5c4c4;
+          box-shadow: inset 0em 0.1em 0.3em #c5c4c4;
   background-color: #eaeaea;
   height: 45px;
   padding-left: 15px;
@@ -134,8 +135,6 @@
     padding-bottom: 32px;
     padding-left: 0px;
     padding-right: 0px;
-    -webkit-box-shadow: inset 0px -1px 5px grey;
-            box-shadow: inset 0px -1px 5px grey;
     font-size: 1.2em;
   }
 }
@@ -146,8 +145,6 @@
     padding-bottom: 10px;
     padding-left: 0px;
     padding-right: 0px;
-    -webkit-box-shadow: inset 0px -1px 5px grey;
-            box-shadow: inset 0px -1px 5px grey;
   }
 }
 
@@ -274,7 +271,11 @@
 }
 
 .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer :hover {
-  border-radius: 30px;
+  border-radius: 100px;
+  margin: 0 0;
+  height: 50px;
+  width: 275px;
+  padding: 0 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#df83cf), to(#9f58b4));
   background: linear-gradient(#df83cf, #9f58b4);
   -webkit-filter: brightness(1.2);

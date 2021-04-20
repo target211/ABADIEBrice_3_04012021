@@ -32,12 +32,12 @@ $ordi: 1024px;
 /* bloc des annonces restaurants */
 .annonceRestaurants{
     background-color: $fond_clair;
-    font-size: 'Roboto';
+    font-family: 'Roboto';
     margin: 0px auto;
 
     @media screen and (max-device-width: $telephone)
     {
-        height: 3500px;
+        height: 3400px;
     }
 
     &__titre{
@@ -83,8 +83,7 @@ $ordi: 1024px;
             margin-left: 80px;
             margin-bottom: 100px;
 
-
-            border: solid 1px grey;
+            background-color: white;
             border-radius: 30px;
             overflow-x : hidden;
 
@@ -92,10 +91,10 @@ $ordi: 1024px;
 
             @media screen and (max-device-width: $telephone)
             {
-                margin-left: 20px;
-                margin-bottom: 30px;
+                margin-left: 40px;
+                margin-bottom: 50px;
                 height: 700px;
-                width: 97%;
+                width: 93%;
             }
             @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
             {
@@ -143,14 +142,14 @@ $ordi: 1024px;
                     {
                         align-content: center;
                         height: 65px;
-                        width: 190px;
+                        width: 170px;
 
-                        font-size: 0.95em;
+                        font-size: 0.8em;
 
                         margin-top: 20px;
                         margin-right: 20px;
-                        padding-top: 15px;
-                        padding-left: 35px;
+                        padding-top: 25px;
+                        padding-left: 30px;
 
                         border-radius: 10px;
                     }
@@ -175,41 +174,37 @@ $ordi: 1024px;
 
                 // tout le texte en dessous de l'image
                 &__Texte{
-                    margin-left: 30px;
-                    padding-top: 0px;
-                    font-size: 1.2em;
+                    margin-left: 0px;
+                    padding: 10px 30px;
+                    font-size: 1em;
                         @media screen and (max-device-width: $telephone)
                         {
-                            margin-left: 50px;
-                            padding-top: 0px;
-                            font-size: 0.8em;
-                            margin: 0px;
+                            font-size: 0.7em;
+                            padding: 30px 30px;
                         }
 
                     // 1ere ligne du bloc
                     &__titre{
-                       //margin-left: 20px;
-                        //margin-top: 10px;
-                        //margin-bottom: 10px;
                         margin: 0px;
+                        padding-bottom: 10px;
                         @media screen and (max-device-width: $telephone)
                         {
-                            //margin-left: 20px;
-                            //margin: 0px;
+                            padding-bottom: 10px;
+                            font-size: 1.4em;
+                        }
+                        @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
+                        {
+                            font-size: 1.2em;
                         }
                     }
 
                     // 2eme ligne du bloc
                     &__sousTitre{
-                        //margin-left: 20px;
-                        //margin-top: 10px;
-                        //margin-bottom: 10px;
+
                         margin: 0;
                         @media screen and (max-device-width: $telephone)
                         {
-                            // margin-top: -50px;
-                            // margin-bottom: -50px;
-                            // margin: 0px;
+
                         }
                     }
                 }
@@ -222,6 +217,8 @@ $ordi: 1024px;
 
                     position: absolute;
                     top: 10px; right: 20px;
+                    
+                    cursor: pointer;
 
                     box-shadow:inset 0 0  0 #f06;
                     transition:1s;

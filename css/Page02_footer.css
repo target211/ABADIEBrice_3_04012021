@@ -32,9 +32,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  height: 170px;
-  font-size: 1em;
+  height: 250px;
+  font-size: 1.4em;
   position: relative;
+  top: 1500px;
 }
 
 @media screen and (max-device-width: 780px) {
@@ -45,12 +46,16 @@
     padding-bottom: 20px;
     height: 520px;
     font-size: 1.4em;
+    position: relative;
+    top: 3000px;
   }
 }
 
 @media screen and (min-device-width: 781px) and (max-device-width: 1023px) {
   .blocFooter {
     margin-bottom: 0px;
+    position: relative;
+    top: 3000px;
   }
 }
 
@@ -115,4 +120,4 @@
     width: 20px;
   }
 }
-/*# sourceMappingURL=footer.css.map */
+/*# sourceMappingURL=Page02_footer.css.map */
