@@ -238,9 +238,14 @@
 }
 
 .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   font-size: 1em;
-  margin: 0px auto 0px auto;
-  padding: 10px 15px;
   border: 1px solid #FF79DA;
   border-radius: 100px;
   -webkit-box-shadow: 0px 15px 20px pink;
@@ -250,7 +255,11 @@
   background: linear-gradient(#ff91ed, #c569e0);
   -webkit-filter: brightness(0.9);
           filter: brightness(0.9);
-  margin-bottom: 30px;
+  height: 65px;
+  width: 325px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
 }
 
 @media screen and (max-device-width: 780px) {
@@ -259,6 +268,8 @@
     margin-top: 30px;
     margin-bottom: 170px;
     padding: 25px 35px;
+    height: 100px;
+    width: 550px;
   }
 }
 
@@ -267,15 +278,15 @@
     font-size: 1.2em;
     margin-bottom: 80px;
     padding: 15px 25px;
+    height: 100px;
+    width: 550px;
   }
 }
 
 .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer :hover {
   border-radius: 100px;
-  margin: 0 0;
   height: 50px;
   width: 275px;
-  padding: 0 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#df83cf), to(#9f58b4));
   background: linear-gradient(#df83cf, #9f58b4);
   -webkit-filter: brightness(1.2);
@@ -284,7 +295,9 @@
 
 @media screen and (max-device-width: 780px) {
   .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer :hover {
-    margin-top: 0px;
+    padding-top: 50px;
+    width: 2000px;
+    padding: 0px;
   }
 }
 
@@ -295,7 +308,7 @@
 }
 
 .menuGlobal .menuNavigation .choixResto-prev__buttonExplorer .textButtonResto-prev {
-  padding-top: 5px;
+  padding-top: 15px;
   margin-top: 0px;
   margin-bottom: 8px;
   padding-left: 25px;

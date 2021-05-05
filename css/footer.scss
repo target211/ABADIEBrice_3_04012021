@@ -88,6 +88,7 @@ $ordi: 1024px;
             margin-bottom: 10px;
         }
     }
+
     &__TextSansIcone{
         margin-left: 50px;
         margin-top: 5px;
@@ -98,8 +99,15 @@ $ordi: 1024px;
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        a{
+            color : white;
+            text-decoration: none;
+        }
+        a:link 
+        { 
+        text-decoration:none; 
+        } 
     }
-
     .fas{
         margin-right: 0px;
         margin-left: -10px;

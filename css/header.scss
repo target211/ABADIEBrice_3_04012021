@@ -186,43 +186,53 @@ $ordi: 1024px;
             }
             /* bouton restaurants */
             &__buttonExplorer{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                
                 font-size: 1em;
-                margin: 0px auto 0px auto;
-                padding: 10px 15px;
                 border: 1px solid $couleur_Secondaire;
                 border-radius: 100px;
                 box-shadow: 0px 15px 20px pink;
                 color: white;
                 background: linear-gradient(#ff91ed, #c569e0);
                 filter: brightness(0.9);
-                margin-bottom: 30px;
+                height: 65px;
+                width: 325px;
+                margin: 0 auto;
+                margin-bottom: 50px;
                 
+                position: relative;
                 @media screen and (max-device-width: $telephone)
                 {
                     font-size: 0.9em;
                     margin-top: 30px;
                     margin-bottom: 170px;
                     padding: 25px 35px;
+                    height: 100px;
+                    width: 550px;
                 }
                 @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
                 {
                     font-size: 1.2em;
                     margin-bottom: 80px;
                     padding: 15px 25px;
+                    height: 100px;
+                    width: 550px;
                 }
 
                 :hover{
                     border-radius: 100px;
-                    margin: 0 0;
                     height: 50px;
                     width: 275px;
-                    padding: 0 0;
                     background: linear-gradient(#df83cf, #9f58b4);
                     filter: brightness(1.2);
 
                     @media screen and (max-device-width: $telephone)
                     {
-                        margin-top: 0px;
+                        padding-top: 50px;
+                        width: 2000px;
+                        padding: 0px;
                     }
                     @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
                     {
@@ -231,7 +241,7 @@ $ordi: 1024px;
                 }
     
                 .textButtonResto-prev{
-                    padding-top: 5px;
+                    padding-top: 15px;
                     margin-top: 0px;
                     margin-bottom: 8px;
                     padding-left: 25px;

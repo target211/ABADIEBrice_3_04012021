@@ -100,6 +100,15 @@
   }
 }
 
+.blocFooter__TextSansIcone a {
+  color: white;
+  text-decoration: none;
+}
+
+.blocFooter__TextSansIcone a:link {
+  text-decoration: none;
+}
+
 .blocFooter .fas {
   margin-right: 0px;
   margin-left: -10px;
