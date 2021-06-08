@@ -181,6 +181,8 @@ $ordi: 1024px;
                     &__texteGlobal{
                         width: 85%;
                         padding-left: 20px;
+                        
+                        flex-grow: 3;
                         @media screen and (min-device-width: $ordi)
                         {
                             width: 85%;
@@ -228,6 +230,8 @@ $ordi: 1024px;
                         
                         padding-top: 0px;
                         padding-right: 15px;
+                        
+                        flex-grow: 1;
 
                         @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
                         {
@@ -261,7 +265,9 @@ $ordi: 1024px;
                         opacity: 0;
                         width: 0px;
                         transition: width 1s, opacity 1s;
-
+                        
+                        flex-grow: 2;
+                        
                         @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
                         {
                             font-size: 2em;
