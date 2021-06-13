@@ -189,9 +189,14 @@ $ordi: 1024px;
                         }
                         // nom du plat en gras
                         &__texteHaut{
-                            font-size: 0.7em;
+                            font-size: 0.6em;
                             font-weight: bold;
-                            padding-top: 30px;
+                            padding-top: 35px;
+
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+
                             @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
                             {
                                 font-size: 2em;
@@ -204,9 +209,14 @@ $ordi: 1024px;
                         // nom du plat sans gras
                         &__texteBas{
                             width: 85%;
-                            font-size: 0.6em;
+                            font-size: 0.5em;
                             color: $color_Police_Grey;
                             padding-top: 7px;
+
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+
                             @media screen and (min-device-width: $tablette_basse) and (max-device-width: $tablette_haute)
                             {
                                 font-size: 1.5em;
